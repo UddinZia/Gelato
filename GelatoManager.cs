@@ -1437,7 +1437,18 @@ public sealed class GelatoManager(
         if (!string.IsNullOrWhiteSpace(meta.ImdbId))
             item.SetProviderId(MetadataProvider.Imdb, meta.ImdbId);
 
-        var stremioUri = new StremioUri(meta.Type, meta.ImdbId ?? id);
+        var externalId = meta.ImdbId ?? id;
+        if (string.IsNullOrWhiteSpace(externalId))
+        {
+            _log.LogWarning(
+                "skipping meta with no imdb/stremio id, name={name}, type={type}",
+                meta.GetName(),
+                meta.Type
+            );
+            return null;
+        }
+        
+        var stremioUri = new StremioUri(meta.Type, externalId);
         item.SetProviderId("Stremio", stremioUri.ExternalId);
 
         item.Overview = meta.Description ?? meta.Overview;
