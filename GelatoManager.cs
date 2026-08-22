@@ -18,7 +18,7 @@ using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 
 namespace Gelato;
-
+// diddy
 public sealed class GelatoManager(
     ILoggerFactory loggerFactory,
     IProviderManager provider,
