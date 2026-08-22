@@ -1,1 +1,20 @@
-   []
+[
+  {
+    "category": "General",
+    "description": "Stream external media.\n",
+    "guid": "94EA4E14-8163-4989-96FE-0A2094BC2D6A",
+    "name": "Gelato",
+    "overview": "Stream external media.",
+    "owner": "lstb1t",
+    "versions": [
+      {
+        "changelog": "v0.26.0.1-NPE-fix — fix search crash due to null exception",
+        "checksum": "6ce3b2fd8cb9941498bed081ef034b13",
+        "sourceUrl": "https://github.com/UddinZia/Gelato/releases/download/v0.26.0.1-NPE-fix/gelato_0.26.15.1.zip",
+        "targetAbi": "10.11.6.0",
+        "timestamp": "2026-08-22T05:05:11Z",
+        "version": "0.26.15.1"
+      }
+    ]
+  }
+]
