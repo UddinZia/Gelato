@@ -8,6 +8,14 @@
     "owner": "lstb1t",
     "versions": [
       {
+        "changelog": "v0.26.15.2 updated build version so it doesnt match existing build version in jellyfin",
+        "checksum": "0a50a5e7be47aa5fe0431d74326e59d5",
+        "sourceUrl": "https://github.com/UddinZia/Gelato/releases/download/v0.26.15.2/gelato_0.26.15.2.zip",
+        "targetAbi": "10.11.6.0",
+        "timestamp": "2026-08-22T05:29:25Z",
+        "version": "0.26.15.2"
+      },
+      {
         "changelog": "v0.26.0.1-NPE-fix — fix search crash due to null exception",
         "checksum": "6ce3b2fd8cb9941498bed081ef034b13",
         "sourceUrl": "https://github.com/UddinZia/Gelato/releases/download/v0.26.0.1-NPE-fix/gelato_0.26.15.1.zip",
